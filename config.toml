@@ -1,0 +1,11 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = "Aditya's Blog"
+theme = 'hugo-tufte'
+
+# Site wide kill switch for LaTeX support
+[params]
+  math = false
+  KaTeXVersion = "0.16.4"
+  KaTeXCDN = "//cdn.jsdelivr.net/npm"
+  
