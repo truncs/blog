@@ -8,4 +8,23 @@ theme = 'hugo-tufte'
   math = false
   KaTeXVersion = "0.16.4"
   KaTeXCDN = "//cdn.jsdelivr.net/npm"
-  
+  favicon =  "./favicon.ico"
+  github = 'truncs'
+  twitter = '_truncs_'
+  linkedin = 'adityasarawgi'
+
+[menu]
+[[menu.nav]]
+    name = 'Home'
+    url = '/'
+    weight = 10
+    identifier = 'home'
+[[menu.nav]]
+    name = 'About'
+    url = '/about'
+    weight = 20
+    identifier = 'about'
+[[menu.nav]]
+    name = 'Categories'
+    url = '/categories'
+    weight = 30
