@@ -178,20 +178,6 @@ for these trajectories[^3].
 | 5. Update `$ \theta \leftarrow \theta + \alpha\triangledown_\theta\mathnormal{J(\theta)}$`                             |
 | 5. Repeat 2. until convergence                                                                                         |
 
-[^1]: [Deep RL Course, UC Berkeley](https://rail.eecs.berkeley.edu/deeprlcourse/)
-
-[^2]: [Sutton & Barto, Reinforcement Learning: An Introduction, 2nd Edition](http://incompleteideas.net/book/the-book-2nd.html)
-
-[^3]: [Kevin P Murphy, Probabilistic Machine Learning: Advanced Topics](https://probml.github.io/pml-book/book2.html)
-
-[^4]: [Schulman, et al., High-Dimensional Continuous Control Using Generalized Advantage Estimation](https://arxiv.org/abs/1506.02438)
-
-[^5]: [Bellman Operators Stackexchange](https://ai.stackexchange.com/questions/11057/what-is-the-bellman-operator-in-reinforcement-learning)
-
-[^6]: [Rafael Stekolshchik, Entropy in Soft Actor-Critic](https://towardsdatascience.com/entropy-in-soft-actor-critic-part-1-92c2cd3a3515)
-
-[^7] [OpenAI Spinning Up](https://spinningup.openai.com/en/latest/algorithms/sac.html)
-
 ## Advantage Actor Critic
 Instead of using the Monte Carlo rollouts we can use the 1 step return estimate of the value function `$ V(s_t) = r_t + \gamma V(s_{t+1}) $`. Using
 our current estimate of the value function as the baseline we can use this in conjuction with the policy grads to get the final update 
@@ -273,3 +259,18 @@ $$`
 `$$
 p_\theta(\tau)  = p(s_1)\prod_{t=1}^{T} \pi_\theta(a_t | s_t) p(s_{t+1}|s_t, a_t)
 $$`
+
+
+[^1]: [Deep RL Course, UC Berkeley](https://rail.eecs.berkeley.edu/deeprlcourse/)
+
+[^2]: [Sutton & Barto, Reinforcement Learning: An Introduction, 2nd Edition](http://incompleteideas.net/book/the-book-2nd.html)
+
+[^3]: [Kevin P Murphy, Probabilistic Machine Learning: Advanced Topics](https://probml.github.io/pml-book/book2.html)
+
+[^4]: [Schulman, et al., High-Dimensional Continuous Control Using Generalized Advantage Estimation](https://arxiv.org/abs/1506.02438)
+
+[^5]: [Bellman Operators Stackexchange](https://ai.stackexchange.com/questions/11057/what-is-the-bellman-operator-in-reinforcement-learning)
+
+[^6]: [Rafael Stekolshchik, Entropy in Soft Actor-Critic](https://towardsdatascience.com/entropy-in-soft-actor-critic-part-1-92c2cd3a3515)
+
+[^7]: [OpenAI Spinning Up](https://spinningup.openai.com/en/latest/algorithms/sac.html)
