@@ -28,3 +28,7 @@ theme = 'hugo-tufte'
     name = 'Categories'
     url = '/categories'
     weight = 30
+
+[services]
+  [services.googleAnalytics]
+    ID = 'G-CZL9N709EF'
